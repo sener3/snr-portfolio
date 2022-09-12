@@ -1,7 +1,7 @@
 import Box from "../components/Box";
 import Image from "../components/Image";
 import Navbar from "../components/Navbar";
-import Typography from "../components/Typography";
+import Typography from "../components/Typography/Typography";
 
 function Home() {
     return (
