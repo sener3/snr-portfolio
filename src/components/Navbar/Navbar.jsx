@@ -5,7 +5,7 @@ import { socialMedia } from "../../utils/constants";
 import Box from "../Box";
 import Logo from "../Logo";
 import Image from "../Image";
-import Hyperlink from "../Hyperlink/Hyperlink";
+import Hyperlink from "../Hyperlink";
 
 function Navbar() {
     return (
