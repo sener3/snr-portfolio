@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+
+.hero-title {
+    margin-bottom: 3rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 138.52%;
+
+    color: $white-color;
+}
+
+.hero-subtitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180.52%;
+
+    letter-spacing: 0.15em;
+
+    color: $white-color;
+}
+
+.text-rotated {
+    margin: 0 1.25rem;
+    padding: 0 1.8125rem;
+
+    background-color: $primary-color;
+    border-radius: 16px;
+
+    box-shadow: $box-shadow;
+
+    transform: rotate(2.5deg);
+    -ms-transform: rotate(2.5deg);
+    -webkit-transform: rotate(2.5deg);
+}

@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+
+.logo {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    
+    background: $gradient-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    span {
+        -webkit-text-fill-color: $white-color;
+    }
+}

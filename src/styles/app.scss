@@ -1,0 +1,29 @@
+@import "./abstracts/variables";
+@import "./abstracts/reset";
+
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2.5rem 0 11.875rem 9.375rem;
+
+    background-color: $dark-color;
+
+    .hero-left {
+        flex: 0 0 38%;
+    }
+
+    .hero-right {
+        flex: 0 0 56%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
