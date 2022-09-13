@@ -1,8 +1,8 @@
 function Hyperlink(props) {
-    const { href, target, children } = props;
+    const { className, href, target, children } = props;
 
     return (
-        <a href={href} target={target}>
+        <a className={(className && className) || ""} href={href} target={target}>
             {children}
         </a>
     );
