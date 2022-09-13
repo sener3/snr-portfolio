@@ -1,5 +1,6 @@
 import Box from "../components/Box";
 import Image from "../components/Image";
+import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import Typography from "../components/Typography";
 
@@ -28,6 +29,10 @@ function Home() {
                 <Box className="hero-right">
                     <Image src="/images/hero.png" />
                 </Box>
+            </Box>
+
+            <Box className="container-projects">
+                <Banner />
             </Box>
         </Box>
     );

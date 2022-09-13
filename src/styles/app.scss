@@ -1,6 +1,10 @@
 @import "./abstracts/variables";
 @import "./abstracts/reset";
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     padding-left: 150px;
     padding-right: 150px;
@@ -26,4 +30,10 @@
             width: 100%;
         }
     }
+}
+
+.container-projects {
+    padding: 150px;
+
+    background-color: $dark-color2;
 }

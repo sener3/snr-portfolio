@@ -135,6 +135,10 @@ p {
           margin-block-end: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   padding-left: 150px;
   padding-right: 150px;
@@ -168,5 +172,10 @@ p {
 
 .hero .hero-right img {
   width: 100%;
+}
+
+.container-projects {
+  padding: 150px;
+  background-color: #212121;
 }
 /*# sourceMappingURL=app.css.map */
