@@ -1,5 +1,7 @@
-@import "./abstracts/variables";
 @import "./abstracts/reset";
+@import "./abstracts/variables";
+
+@import "./components/scrollbar";
 
 body {
     overflow-x: hidden;
