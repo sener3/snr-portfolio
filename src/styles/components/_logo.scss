@@ -13,6 +13,10 @@
         background: $gradient-primary;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media(max-width: 600px) {
+            font-size: 2rem;
+        }
     
         span {
             -webkit-text-fill-color: $white-color;
