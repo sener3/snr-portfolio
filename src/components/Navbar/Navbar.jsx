@@ -9,12 +9,12 @@ import Hyperlink from "../Hyperlink";
 
 function Navbar() {
     return (
-        <Box className="navbar">
+        <Box className="navbar container">
             <Logo />
 
             <Box className="navbar-social">
-                {socialMedia.map((x) => (
-                    <Hyperlink href={x.href} target="_blank">
+                {socialMedia.map((x, index) => (
+                    <Hyperlink key={index} href={x.href} target="_blank">
                         <Image src={x.src} alt={x.alt} />
                     </Hyperlink>
                 ))}

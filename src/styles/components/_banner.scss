@@ -2,13 +2,13 @@
 
 .banner-wrapper {
     padding: 1.5px;
-    margin-top: -250px;
 
     background: $gradient-border;
     border-radius: 1rem;
 
     .banner-container {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
 
@@ -42,8 +42,94 @@
             flex: 0 0 78%;
 
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1326px) {
+    .banner-wrapper {
+        .banner-container {
+            justify-content: center;
+
+            .banner-title {
+                margin-bottom: 3rem;
+            }
+
+            .banner-line {
+                display: none;
+            }
+
+ 
+            .banner-skills {
+                flex: 0 0 100%;
+
+                .banner-skill {
+                    width: 5.3125rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .banner-wrapper {
+        .banner-container {
+
+            padding: 2rem;
+
+            .banner-title {
+                margin-bottom: 2.5rem;
+
+                font-size: 2rem;
+            }
+
+            .banner-line {
+                display: none;
+            }
+
+            .banner-skills {
+                row-gap: 1.875rem;
+                column-gap: 1.875rem;
+
+                justify-content: center;
+
+                .banner-skill {
+                    width: 4.6875rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-wrapper {
+        .banner-container {
+
+            padding: 2rem;
+
+            .banner-title {
+                margin-bottom: 2.5rem;
+
+                font-size: 1.5rem;
+            }
+
+            .banner-line {
+                display: none;
+            }
+
+            .banner-skills {
+                row-gap: 1.875rem;
+                column-gap: 1.875rem;
+
+                justify-content: center;
+
+                .banner-skill {
+                    width: 3.125rem;
+                }
+            }
         }
     }
 }

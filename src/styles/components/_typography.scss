@@ -10,6 +10,14 @@
     line-height: 138.52%;
 
     color: $white-color;
+
+    @media (max-width: 992px) {
+        font-size: 4.5rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 3.5rem;
+    }
 }
 
 .hero-subtitle {
@@ -22,14 +30,28 @@
     letter-spacing: 0.15em;
 
     color: $white-color;
+
+    @media (max-width: 992px) {
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 0.75rem;
+    }
 }
 
-.text-rotated {
-    margin: 0 1.25rem;
+.hero-span {
+    margin-right: 1.5rem;
+}
+
+.text-highlight {
+    display: inline-block;
+
+    margin-right: 1.5rem;
     padding: 0 1.8125rem;
 
     background-color: $primary-color;
-    border-radius: 16px;
+    border-radius: 1rem;
 
     box-shadow: $box-shadow;
 

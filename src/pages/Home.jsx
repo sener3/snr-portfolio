@@ -9,11 +9,15 @@ function Home() {
         <Box>
             <Navbar />
 
-            <Box className="hero">
+            <Box className="hero container">
                 <Box className="hero-left">
                     <Typography className="hero-title" variant="h1">
-                        Hello, I’m
-                        <Typography className="text-rotated" variant="span">
+                        Hello,
+                        <br />
+                        <Typography className="hero-span" variant="span">
+                            I’m
+                        </Typography>
+                        <Typography className="text-highlight" variant="span">
                             Șener
                         </Typography>
                         !
@@ -31,7 +35,7 @@ function Home() {
                 </Box>
             </Box>
 
-            <Box className="container-projects">
+            <Box id="container-projects" className="container container-projects">
                 <Banner />
             </Box>
         </Box>

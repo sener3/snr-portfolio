@@ -4,16 +4,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.875rem 9.375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
     background-color: $dark-color;
 
     .navbar-social {
         a {
             cursor: pointer;
+
+
             
             &:not(:first-child) {
                 margin-left: 1.5625rem;
+
+                @media (max-width: 600px) {
+                    margin-left: 1rem;
+                }
             }
         }
     }
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+
+        .navbar-social {
+            a {
+                img {
+                    width: 2.1875rem
+               }
+            }
+        }
+    }    
+   
+ }

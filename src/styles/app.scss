@@ -8,25 +8,29 @@ body {
 }
 
 .container {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 9.375rem;
+    padding-right: 9.375rem;
 }
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
-    padding: 2.5rem 0 11.875rem 9.375rem;
+    padding-top: 2.5rem;
+    padding-bottom: 11.875rem;
 
     background-color: $dark-color;
 
     .hero-left {
         flex: 0 0 38%;
+        max-width: 38%;
     }
 
     .hero-right {
         flex: 0 0 56%;
+        max-width: 56%;
 
         img {
             width: 100%;
@@ -35,7 +39,38 @@ body {
 }
 
 .container-projects {
-    padding: 150px;
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
 
     background-color: $dark-color2;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+
+    .hero {
+        .hero-left,
+        .hero-right {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .hero-left {
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+
+    .hero {
+        padding-top: 0;
+    }
 }
